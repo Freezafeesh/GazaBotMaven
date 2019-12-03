@@ -1,1 +1,1 @@
-worker: java -cp target/classes/GBLMain.class
+worker: java GBLMain.java
