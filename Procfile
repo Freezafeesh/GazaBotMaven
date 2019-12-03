@@ -1,1 +1,0 @@
-worker: java -cp target/classes/;target/dependency/* com.gblite.GBLMain.java
