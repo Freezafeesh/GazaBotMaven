@@ -31,7 +31,7 @@ public class GBLMain {
         }
          jda.getPresence().setStatus(OnlineStatus.DO_NOT_DISTURB);
          jda.getPresence().setActivity(Activity.playing("null"));
-    
+         jda.addEventListener(new Commands.Cull());
    
 }
 }

@@ -26,7 +26,7 @@ public class Cull extends ListenerAdapter{
                         }
                             
                         else{
-                            if(event.getMember().getRoles().contains(User)){
+                            
                             try{List<Message> messages = event.getChannel().getHistory().retrievePast(Integer.parseInt(args[1])).complete();
                             event.getChannel().deleteMessages(messages).queue();
                             Thread.sleep(1000);
@@ -39,7 +39,7 @@ public class Cull extends ListenerAdapter{
                                else{
                                     event.getChannel().sendMessage("`Can't delete messages > 2 weeks`").queue();
                                }
-                            }
+                            
                         }    
                             }    
         }
