@@ -25,11 +25,11 @@ public class GBLMain {
     public static void main(String[] args){
         
         try {
-         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.Xea2DA.OAliVwfh7s6kuFHn2odY0g-vsmM").build(); 
+         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.Xed51g.txsVIKXmfY4Fchj3HCowFMObIcw").build(); 
         } catch (Exception e) {
             System.out.println(e);
         }
-         jda.getPresence().setStatus(OnlineStatus.DO_NOT_DISTURB);
+         jda.getPresence().setStatus(OnlineStatus.ONLINE);
          jda.getPresence().setActivity(Activity.playing("null"));
          jda.addEventListener(new Commands.Cull());
    
