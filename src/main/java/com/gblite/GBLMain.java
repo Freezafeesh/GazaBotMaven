@@ -26,14 +26,13 @@ public class GBLMain {
     public static void main(String[] args){
         
         try {
-         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.XegcVg.DYdyFmGYJcsT80FDyRXwL-WcEoI").build(); 
-         jda.getPresence().setStatus(OnlineStatus.ONLINE);
-         jda.getPresence().setActivity(Activity.playing(".help for commands"));
-         jda.addEventListener(new Commands.Cull());
+         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.XegeZw.UsBZE9PYUv-pH0jWlwh17MtZImg").build(); 
         } catch (LoginException e) {
             System.out.println(e);
         }
-         
+         jda.getPresence().setStatus(OnlineStatus.ONLINE);
+         jda.getPresence().setActivity(Activity.playing(".help for commands"));
+         jda.addEventListener(new Commands.Cull());
    
 }
 }
