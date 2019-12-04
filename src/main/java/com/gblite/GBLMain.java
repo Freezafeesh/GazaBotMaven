@@ -1,6 +1,7 @@
 package com.gblite;
 
 
+import javax.security.auth.login.LoginException;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -25,13 +26,14 @@ public class GBLMain {
     public static void main(String[] args){
         
         try {
-         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.Xed51g.txsVIKXmfY4Fchj3HCowFMObIcw").build(); 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.XegcVg.DYdyFmGYJcsT80FDyRXwL-WcEoI").build(); 
          jda.getPresence().setStatus(OnlineStatus.ONLINE);
          jda.getPresence().setActivity(Activity.playing(".help for commands"));
          jda.addEventListener(new Commands.Cull());
+        } catch (LoginException e) {
+            System.out.println(e);
+        }
+         
    
 }
 }
