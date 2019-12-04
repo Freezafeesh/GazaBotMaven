@@ -19,7 +19,7 @@ import net.dv8tion.jda.api.entities.Activity;
  */
 public class GBLMain {
     public static JDA jda;
-    public static String prefix = ",,";  
+    public static String prefix = ".";  
     public static int i = 1;
     public static int k;
     public static void main(String[] args){
