@@ -30,7 +30,7 @@ public class GBLMain {
             System.out.println(e);
         }
          jda.getPresence().setStatus(OnlineStatus.ONLINE);
-         jda.getPresence().setActivity(Activity.playing("null"));
+         jda.getPresence().setActivity(Activity.playing(".help for commands"));
          jda.addEventListener(new Commands.Cull());
    
 }
