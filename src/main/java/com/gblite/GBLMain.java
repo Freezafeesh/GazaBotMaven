@@ -26,7 +26,7 @@ public class GBLMain {
     public static void main(String[] args){
         
         try {
-         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.XfKreQ.OC1IQ3rOk9gvBkqlP5yphWZQn3Q").build(); 
+         jda = new JDABuilder(AccountType.BOT).setToken("NjUxMjEwNTY1MzQ3MzExNjI2.XfKwVQ.559Q5ALALe2dh1Fv09pIKdmvdzs").build(); 
         } catch (LoginException e) {
             System.out.println(e);
         }
